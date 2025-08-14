@@ -207,13 +207,14 @@
 
     <section class="contact" id="contact">
         <h1 class="heading"> <span> contact </span> me </h1>
-        <form action="">
-            <input type="text" placeholder="your name" class="box">
-            <input type="email" placeholder="your email" class="box">
-            <input type="text" placeholder="subject" class="box">
-            <textarea name="" class="box" placeholder="your message" id="" cols="30" rows="10"></textarea>
-            <a href="#" class="btn">Send Message</a>
-        </form>
+        <form action="send.php" method="POST">
+    <input type="text" name="name" placeholder="Your name" class="box" required>
+    <input type="email" name="email" placeholder="Your email" class="box" required>
+    <input type="text" name="subject" placeholder="Subject" class="box" required>
+    <textarea name="message" class="box" placeholder="Your message" cols="30" rows="10" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
     </section>
 
     <!--Contact section ends-->
